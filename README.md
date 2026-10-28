@@ -33,7 +33,7 @@ geowind2plan/
 ## Data
 
 Download the contents of the `geowind2plan_data/` folder of
-[CityFFD-UrbanMicroclimate](https://huggingface.co/datasets/UMBE-LAB/CityFFD-UrbanMicroclimate)
+CityFFD-UrbanMicroclimate (https://huggingface.co/datasets/UMBE-LAB/CityFFD-UrbanMicroclimate)
 and place them in `data/`:
 
 ```
@@ -116,14 +116,15 @@ python summarize_results.py results/block_A_wind_4ms_altitude_75m.npy
 
 `data/` holds all the data needed to reproduce the planning results of the
 paper, including the predicted wind and the baseline winds of every test urban
-block. To predict wind for new urban areas, you can train a
-[Fourier neural operator](https://github.com/neuraloperator/neuraloperator) or a
-[multiwavelet neural operator](https://github.com/gaurav71531/mwt-operator) on the
-[CityFFD-UrbanMicroclimate](https://huggingface.co/datasets/UMBE-LAB/CityFFD-UrbanMicroclimate)
-dataset, which holds the CFD simulations used in the paper. The trained model of
-the paper is available on request from Xiongye Xiao (xxiao9@utk.edu) and
-Liangzhu (Leon) Wang (leon.wang@concordia.ca). You can also see how a lightweight
-version of the model performs in the [demo](https://geowind2plan.com/).
+block. To predict wind for new urban areas, you can train a Fourier neural
+operator (https://github.com/neuraloperator/neuraloperator) or a multiwavelet
+neural operator (https://github.com/gaurav71531/mwt-operator) on the
+CityFFD-UrbanMicroclimate dataset
+(https://huggingface.co/datasets/UMBE-LAB/CityFFD-UrbanMicroclimate), which
+holds the CFD simulations used in the paper. The trained model of the paper is
+available on request from Xiongye Xiao (`xxiao9@utk.edu`) and Liangzhu (Leon)
+Wang (`leon.wang@concordia.ca`). You can also see how a lightweight version of
+the model performs in the demo (https://geowind2plan.com/).
 
 ## Citation
 
