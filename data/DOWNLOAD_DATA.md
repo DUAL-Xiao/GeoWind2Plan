@@ -1,6 +1,6 @@
 # Data
 
-Download the data from https://huggingface.co/datasets/ShaoxiangQin/geowind2plan_data and place it in this folder:
+Download the contents of the `geowind2plan_data/` folder of https://huggingface.co/datasets/UMBE-LAB/CityFFD-UrbanMicroclimate and place them in this folder:
 
 ```
 data/

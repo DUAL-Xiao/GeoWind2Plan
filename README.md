@@ -3,6 +3,8 @@
 Code and data for the UAV planning experiments of *GeoWind2Plan: Mission-Time 3D
 Urban Wind Prediction for Energy-Efficient UAV Planning*.
 
+Demo: https://geowind2plan.com/
+
 Each mission is planned with four planning winds: the CFD wind (Ground truth),
 the neural-operator prediction (Ours), a height-only wind profile (Profile wind)
 and zero wind (Wind-agnostic). The predicted wind fields for all experiments of
@@ -29,6 +31,10 @@ geowind2plan/
 ```
 
 ## Data
+
+Download the contents of the `geowind2plan_data/` folder of
+[CityFFD-UrbanMicroclimate](https://huggingface.co/datasets/UMBE-LAB/CityFFD-UrbanMicroclimate)
+and place them in `data/`:
 
 ```
 data/
@@ -104,4 +110,18 @@ Ground truth in percent, and the mean flight altitude and mean ground speed.
 
 ```
 python summarize_results.py results/block_A_wind_4ms_altitude_75m.npy
+```
+
+## Citation
+
+```bibtex
+@misc{qin2026geowind2planmissiontime3durban,
+  title={GeoWind2Plan: Mission-Time 3D Urban Wind Prediction for Energy-Efficient UAV Planning},
+  author={Shaoxiang Qin and Yucheng Zhao and Fuyuan Lyu and Di Zhou and Jiachen Yao and Xue Liu and Anima Anandkumar and Liangzhu Leon Wang and Xiongye Xiao},
+  year={2026},
+  eprint={2609.36056},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2609.36056},
+}
 ```
